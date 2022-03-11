@@ -263,7 +263,7 @@ img {
 	display: inline-block;
     position: relative;
 	 left: 50%;
-	margin: 150px 0;
+  margin-top: 50px;
 	transform: translate(-50%, 0);
     padding: 10px 20px 20px;
 	border-radius: 5px;
