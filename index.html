@@ -28,6 +28,9 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+
+        <!-- kit -->
+        <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -77,7 +80,42 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+
+            <div class="accordion-menu">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i class="arrow"></i>
+                        <h2><i class="fas fa-code"></i>How does javascript Works</h2>
+                        <p>javascript is a interpreted programing/scripting language. That means we don't have to compile the the script code before sending the browser. An interpreter take raw script code and transfar in binary code and run it browser. <span class="acrrodian"> (
+
+                            basically javacript engine contain a base line compailer , the compailer compile source code  into an bytecode and feed this byte code to  the interpreter . And interrpreter take this byted code and converts  to the mechine code whic is run in CPU) </span>  Every browser provides javascript engine that run javascript code such as chrome provide b8 engine,
+                            There are basically 2 ways to run JavaScript code in a browser 1 server side 2 client side.
+                        </p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i class="arrow"></i>
+                        <h2><i class="fas fa-question"></i>How doed event loop work</h2>
+                        <p>The event loop is the secret behind JavaScript's asynchronous programming.
+                            javascript engine executes script from up to down .it create the execution contexts pushes and pops function an the call stack .The  is a constantly running process that monitors both the callback queue and the call stack. Event loop waite untill the empty call stack. when the call stack are empty event loop take a funnction and send it call stack. If a function takes a long time to execute, you cannot interact with the web browser during the function's execution because the page hangs.and this called syncronas , as well When you set  the setTimeout() function the web browser can do these activities concurrently and asynchronously.basically event loop work in asynchronously.
+                        </p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i class="arrow"></i>
+                        <h2><i class="fas fa-laugh"></i>local storager vs session storage</h2>
+                        <p> 
+                            basically session storage and local storagfe same .The main different is the all data expiritaion session storage data are accessible while end the window. as well it's are also unnique par tab.  on the otherhand local storage data are. accessible closing the window.lasts until you delete it or the user deletes it. thats mean you can use local storage for long term
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+
+
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>

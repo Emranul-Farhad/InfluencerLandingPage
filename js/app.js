@@ -12,8 +12,12 @@ const getReportedPosts = () => {
 };
 
 const isLiked = (id) => {
-    return likedPostsId?.length && !!likedPostsId.includes(id);
+    return likedPostsId?.length && !! likedPostsId.includes(id);
+    
 };
+
+
+
 
 const addToLiked = (id) => {
     likedPostsId.push(id); 
@@ -51,6 +55,7 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
+  
     const image = post.image;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
